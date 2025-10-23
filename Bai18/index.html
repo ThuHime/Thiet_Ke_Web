@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ảnh nền</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>ẢNH NỀN TRONG CSS</h1>
+
+  <section id="basic">
+    <h2>1. Ảnh nền cơ bản</h2>
+    <blockquote>
+      Đây là đoạn blockquote có ảnh nền.
+    </blockquote>
+  </section>
+
+  <section id="repeat">
+    <h2>2. Lặp ảnh nền (repeat)</h2>
+    <div class="demo-box no-repeat">no-repeat</div>
+    <div class="demo-box repeat-x">repeat-x</div>
+    <div class="demo-box repeat-y">repeat-y</div>
+    <div class="demo-box space">space</div>
+    <div class="demo-box round">round</div>
+  </section>
+
+  <section id="position">
+    <h2>3. Vị trí ảnh nền (position)</h2>
+    <div class="demo-box pos-left-bottom">left bottom</div>
+    <div class="demo-box pos-right-center">right center</div>
+    <div class="demo-box pos-200-50">200px 50px</div>
+    <div class="demo-box pos-100">100% 100%</div>
+  </section>
+
+  <section id="attachment">
+    <h2>4. Kiểu cuộn ảnh nền (attachment)</h2>
+    <div class="scroll">scroll (mặc định)</div>
+    <div class="fixed">fixed</div>
+    <div class="local">
+      local<br>(cuộn nội dung riêng)
+      <div class="inner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac nisi nec magna gravida bibendum...</div>
+    </div>
+  </section>
+
+  <section id="size">
+    <h2>5. Kích thước ảnh nền (size)</h2>
+    <div class="demo-box size-px">100px 200px</div>
+    <div class="demo-box size-contain">contain</div>
+    <div class="demo-box size-cover">cover</div>
+  </section>
+
+  <section id="shorthand">
+    <h2>6. Shorthand</h2>
+    <div class="demo-box shorthand">background: white url(star.png) no-repeat right top fixed;</div>
+  </section>
+
+  <section id="multiple">
+    <h2>7. Nhiều ảnh nền</h2>
+    <div class="demo-box multiple">
+      multiple backgrounds (3 lớp ảnh chồng nhau)
+    </div>
+  </section>
+</body>
+</html>

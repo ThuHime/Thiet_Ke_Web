@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<tittle>Đăng ký nhận tin</tittle>
+</head>
+<body>
+	<h1>Đăng ký nhận tin</h1>
+	<form action="/client.php" method="POST" enctype="multipart/form-data">
+        <label>Gửi ảnh đại diện của bạn
+        <em>(tùy chọn)</em><br>
+        <input type="file" name="photo" size="28"></label>
+        </form>
+	<form action="" method="get">
+	<label for="form-mat-khau">Mật khẩu:</label>
+	<input type="password" name="mat-khau" maxlength="8" id="form-mat-khau">
+ <fieldset>
+      <legend>Bạn bao nhiêu tuổi?</legend>
+      <ol>
+        <li><label><input type="radio" name="tuoi" value="duoi24" checked> dưới 24</label></li>
+        <li><label><input type="radio" name="tuoi" value="25-34"> 25 tới 34</label></li>
+        <li><label><input type="radio" name="tuoi" value="35-44"> 35 tới 44</label></li>
+        <li><label><input type="radio" name="tuoi" value="tren45"> 45+</label></li>
+      </ol>  
+      <legend>Thói quen đọc của bạn là gì?</legend>
+      <ol>
+        <li><label><input type="checkbox" name="nguon" value="sach-giay" checked> Sách giấy</label></li>
+        <li><label><input type="checkbox" name="nguon" value="ebook" checked> Sách điện tử</label></li
+
+        <li><label><input type="checkbox" name="nguon" value="mang-xa-hoi"> Mạng xã hội</label></li>
+        <li><label><input type="checkbox" name="nguon" value="nghe-doc"> Nghe người khác đọc</label></li>
+      </ol>      
+    </fieldset>
+      <p><label>Nhận xét của bạn về cuốn sách:<br>
+      <em>Cho chúng tôi biết cảm nhận của bạn về cuốn sách này, đây sẽ là những thông tin rất có ích đối với Nhà xuất bản, tác giả và các độc giả khác</em><br>
+      <textarea name="nhan-xet" cols="30" rows="10" placeholder="Nhận xét không quá 50 từ"></textarea></label></p>
+	<p><strong>Danh sách sách:</strong></p>
+	<label for="form-sach">
+	<input type="text" list="sach" id="form-sach">
+        <datalist id="sach">
+          <option value="Khuyến học"></option>
+          <option value="Đúng việc"></option>
+          <option value="Khởi hành"></option>
+          <option value="Trên đường băng"></option>
+          <option value="Nhà giả kim"></option>
+        </datalist>
+	<p>Trong các quyển sách sau, bạn thích quyển nào nhất?
+      <select name="thich-nhat">
+      <option value=“khuyen-hoc”>Khuyến học</option>
+      <option>Đúng việc</option>
+      <option>Khởi hành</option>
+      <option>Trên đường băng</option>
+      <option>Nhà giả kim</option>
+    </select></p>
+      <p>Trong các quyển sách sau, bạn thích quyển nào?
+      <select name="thich-nhat" size="7" multiple>
+        <optgroup label="Sách dịch">
+        <option>Khuyến học</option>
+        <option selected>Khởi hành</option>
+        <option>Nhà giả kim</option>
+        </optgroup>
+        <optgroup label="Sách Việt">
+        <option>Trên đường băng</option>
+        <option selected>Đúng việc</option>
+        </optgroup>
+      </select></p>
+      </label>
+	<input type="submit" value="Đăng nhập">
+ 	<input type="reset" value="Làm lại">
+</form>
+</body>
+</html>
+	
