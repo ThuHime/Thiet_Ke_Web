@@ -1,0 +1,114 @@
+/* ===== Thiết lập chung ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #fafafa;
+}
+h2 {
+  background-color: #004d99;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+}
+section {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  padding: 15px;
+  background: white;
+  border-radius: 6px;
+}
+
+/* ===== 1. Mô hình cái hộp cơ bản ===== */
+.box-model * { border: 1px solid red; padding: 3px; }
+
+/* ===== 2. Kích thước content-box ===== */
+.content-box p {
+  background: #c2f670;
+  width: 500px;
+  height: 150px;
+  padding: 20px;
+  border: 2px solid gray;
+  margin: 20px;
+  box-sizing: content-box;
+}
+
+/* ===== 3. Kích thước border-box ===== */
+.border-box p {
+  box-sizing: border-box;
+  background: #a0e7e5;
+  width: 500px;
+  height: 150px;
+  border: 2px solid #555;
+  padding: 20px;
+}
+
+/* ===== 4. Padding ===== */
+.padding-1 p { padding: 1em 3em 1em 3em; background: #d098d4; }
+
+/* ===== 5. Border ===== */
+.border-style p {
+  border-style: solid dashed double dotted;
+  width: 300px; height: 100px;
+}
+.border-width p {
+  border-width: thin medium thick 12px;
+  border-style: solid;
+  width: 300px; height: 100px;
+}
+.border-color p {
+  border-color: green red violet yellow;
+  border-style: solid;
+  border-width: 6px;
+  width: 300px; height: 100px;
+}
+.border-shorthand p {
+  border: solid 6px green;
+  width: 300px; height: 100px;
+}
+
+/* ===== 6. Border radius ===== */
+.radius-1 p {
+  border: solid 6px green;
+  width: 300px; height: 100px;
+  border-top-right-radius: 15px 30px;
+}
+.radius-2 p {
+  border: solid 6px green;
+  width: 300px; height: 100px;
+  border-radius: 15px / 40px;
+}
+.radius-3 p {
+  border: solid 6px green;
+  width: 300px; height: 100px;
+  border-radius: 36px 40px 60px 20px / 12px 10px 30px 36px;
+}
+
+/* ===== 7. Margin ===== */
+.margin-1 p {
+  margin: 2em 250px 1em 4em;
+  border: 1px solid red;
+  background: #fcf2be;
+}
+.margin-2 p {
+  margin: 1em 3em;
+  background-color: #d098d4;
+}
+
+/* ===== 8. Display ===== */
+ul.navigation li { display: inline; margin-right: 10px; }
+ul.navigation li a {
+  display: block;
+  background: #1e90ff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+ul.navigation li a:hover { background: #005f99; }
+
+/* ===== 9. Box shadow ===== */
+.shadow-1 p { box-shadow: 5px 10px; }
+.shadow-2 p { box-shadow: 5px 10px 4px; }
+.shadow-3 p { box-shadow: 5px 10px 4px 8px green; }
+.shadow-4 p { box-shadow: 5px 10px 4px 10px green inset; }
+.shadow-5 p { box-shadow: 5px 10px 4px 10px green inset, 5px 10px yellow; }
